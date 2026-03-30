@@ -37,8 +37,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 package-lock.json
 .codebuddy/
 .agent/
-.agents/
-.claude/
+# .agents/
+# .claude/
 .cursor/
 .gemini/
 .github/skills/
@@ -46,7 +46,7 @@ package-lock.json
 .qoder/
 .qwen/
 .trae/
-.vscode/
+# .vscode/
 
 bin/_chunks/
 bin/cli-wrapper.mjs

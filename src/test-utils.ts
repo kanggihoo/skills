@@ -30,7 +30,7 @@ export function runCli(
     const output = execSync(`node "${CLI_PATH}" ${args.join(' ')}`, {
       encoding: 'utf-8',
       cwd,
-      stdio: ['pipe', 'pipe', 'pipe'],
+      stdio: ['pipe', 'pipe', 'pipe'], // 표준 입력, 출력, 에러를 모두 캡처
       env: env ? { ...process.env, ...env } : undefined,
       timeout: timeout ?? 30000,
     });

@@ -623,12 +623,12 @@ async function main(): Promise<void> {
     case 's':
       showLogo();
       console.log();
-      await runFind(restArgs);
+      await runFind(restArgs); // !!
       break;
     case 'init':
       showLogo();
       console.log();
-      runInit(restArgs);
+      runInit(restArgs); // !!
       break;
     case 'experimental_install': {
       showLogo();
@@ -641,7 +641,7 @@ async function main(): Promise<void> {
     case 'add': {
       showLogo();
       const { source: addSource, options: addOpts } = parseAddOptions(restArgs);
-      await runAdd(addSource, addOpts);
+      await runAdd(addSource, addOpts); // !!
       break;
     }
     case 'remove':
